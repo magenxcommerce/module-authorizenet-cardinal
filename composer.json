@@ -1,0 +1,36 @@
+{
+    "name": "magenxcommerce/module-authorizenet-cardinal",
+    "description": "Provides a possibility to enable 3-D Secure 2.0 support for Authorize.Net Acceptjs.",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "version": "100.3.2",
+    "require": {
+        "php": "~7.3.0||~7.4.0",
+        "magenxcommerce/module-authorizenet-acceptjs": "100.3.*",
+        "magenxcommerce/framework": "102.0.*",
+        "magenxcommerce/module-cardinal-commerce": "100.3.*",
+        "magenxcommerce/module-payment": "100.3.*",
+        "magenxcommerce/module-sales": "102.0.*",
+        "magenxcommerce/module-quote": "101.1.*",
+        "magenxcommerce/module-checkout": "100.3.*",
+        "magenxcommerce/module-store": "101.0.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magento\\AuthorizenetCardinal\\": ""
+        }
+    },
+    "replace": {
+        "magento/module-authorizenet-cardinal": "*"
+    },
+    "suggest": {}
+}
